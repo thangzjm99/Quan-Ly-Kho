@@ -9,55 +9,60 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.MANHAPKHO)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TENHANGHOA)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.SOLUONG)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.DONGIA)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.THANHTIEN)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.NGAYNHAPKHO)
-        </th>
-        <th></th>
-    </tr>
+<table class="table" id=" myTable">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MANHAPKHO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TENHANGHOA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SOLUONG)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DONGIA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.THANHTIEN)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NGAYNHAPKHO)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
 
-@foreach (var item in Model) {
-<tr>
-    <td>
-        @Html.DisplayFor(modelItem => item.MANHAPKHO)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.TENHANGHOA)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.SOLUONG)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.DONGIA)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.THANHTIEN)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.NGAYNHAPKHO)
-    </td>
-    <td>
-        @Html.ActionLink("Edit", "Edit", new { id = item.MANHAPKHO }) |
-        @Html.ActionLink("Details", "Details", new { id = item.MANHAPKHO }) |
-        @Html.ActionLink("Delete", "Delete", new { id = item.MANHAPKHO })
-    </td>
-</tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MANHAPKHO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TENHANGHOA)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SOLUONG)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DONGIA)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.THANHTIEN)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NGAYNHAPKHO)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.MANHAPKHO }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.MANHAPKHO }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.MANHAPKHO })
+                </td>
+            </tr>
+        }
+    </tbody>
 
 </table>
