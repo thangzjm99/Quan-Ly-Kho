@@ -1,0 +1,42 @@
+﻿@model QuanLyKho.Models.NHACUNGCAP
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>NHACUNGCAP</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TENNHACUNGCAP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TENNHACUNGCAP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DIACHI)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DIACHI)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SĐT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SĐT)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MANHACUNGCAP }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
