@@ -53,6 +53,7 @@
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -131,6 +132,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HANGHOAsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\NHACUNGCAPsController.cs" />
     <Compile Include="Controllers\NHAPKHOesController.cs" />
     <Compile Include="Controllers\XUATKHOesController.cs" />
@@ -2004,6 +2006,7 @@
     <Content Include="Views\XUATKHOes\Details.cshtml" />
     <Content Include="Views\XUATKHOes\Edit.cshtml" />
     <Content Include="Views\XUATKHOes\Index.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
