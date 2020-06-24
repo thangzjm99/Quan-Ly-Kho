@@ -1,0 +1,80 @@
+﻿@model IEnumerable<QuanLyKho.Models.XUATKHO>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table" id="myTable">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.HANGHOA.TENHANGHOA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NGAYXUATKHO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SOLUONG)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DONGIA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.THANHTIEN)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HANGHOA.TENHANGHOA)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NGAYXUATKHO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SOLUONG)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DONGIA)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.THANHTIEN)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.MAXUATKHO }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.MAXUATKHO }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.MAXUATKHO })
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.HANGHOA.TENHANGHOA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NGAYXUATKHO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SOLUONG)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DONGIA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.THANHTIEN)
+            </th>
+            <th></th>
+        </tr>
+    </tfoot>
+</table>

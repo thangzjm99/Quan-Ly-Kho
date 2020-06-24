@@ -1,0 +1,71 @@
+﻿@model IEnumerable<QuanLyKho.Models.HANGHOA>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table" id="myTable">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TENHANGHOA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.XUATXU)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DONGIA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SOLUONGSANSANG)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TENHANGHOA)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.XUATXU)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DONGIA)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SOLUONGSANSANG)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.MAHANGHOA }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.MAHANGHOA }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.MAHANGHOA })
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TENHANGHOA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.XUATXU)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DONGIA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SOLUONGSANSANG)
+            </th>
+            <th></th>
+        </tr>
+    </tfoot>
+</table>

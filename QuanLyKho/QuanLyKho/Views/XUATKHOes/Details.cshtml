@@ -1,0 +1,58 @@
+﻿@model QuanLyKho.Models.XUATKHO
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>XUATKHO</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HANGHOA.TENHANGHOA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HANGHOA.TENHANGHOA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NGAYXUATKHO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NGAYXUATKHO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SOLUONG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SOLUONG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DONGIA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DONGIA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.THANHTIEN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.THANHTIEN)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MAXUATKHO }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
