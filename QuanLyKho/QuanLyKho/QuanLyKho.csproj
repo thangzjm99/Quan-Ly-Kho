@@ -1782,6 +1782,17 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Image\Screenshot %28479%29.png" />
+    <Content Include="Image\Screenshot %28479%29_LI.jpg" />
+    <Content Include="Image\Screenshot %28480%29.png" />
+    <Content Include="Image\Screenshot %28480%29_LI.jpg" />
+    <Content Include="Image\Screenshot %28481%29.png" />
+    <Content Include="Image\Screenshot %28481%29_LI.jpg" />
+    <Content Include="Image\Screenshot %28482%29.png" />
+    <Content Include="Image\Screenshot %28483%29.png" />
+    <Content Include="Image\Screenshot %28485%29.png" />
+    <Content Include="Image\Screenshot %28486%29.png" />
+    <Content Include="Image\Screenshot %28487%29.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\.browserslistrc" />
